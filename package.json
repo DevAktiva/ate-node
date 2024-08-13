@@ -1,0 +1,22 @@
+{
+  "name": "ate-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "format:apply": "biome check --apply .",
+    "format:check": "biome format .",
+    "format": "biome format --write .",
+    "lint": "biome check ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/node": "18.19.34",
+    "ts-node": "10.9.2",
+    "tsup": "7.2.0",
+    "typescript": "5.4.5"
+  }
+}
