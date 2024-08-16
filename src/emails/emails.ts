@@ -38,7 +38,7 @@ export class Emails {
         cc: payload.cc,
         bcc: payload.bcc,
         subject: payload.subject,
-        reply_to: payload.reply_to,
+        replyTo: payload.reply_to,
         content: content,
         content_type: contentType,
         attachments: payload.attachments,
