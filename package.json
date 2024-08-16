@@ -1,6 +1,6 @@
 {
   "name": "@aktiva/transaksional-email",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "description": "Aktiva Transaksional Email SDK for Node JS",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
