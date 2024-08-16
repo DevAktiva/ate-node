@@ -10,7 +10,7 @@ npm install @aktiva/transaksional-email
 
 ## Setup
 
-You need API token to authenticate the library with ATE API, which is available in the [Aktiva Transaksional Email Dashboard](https://apps.aktiva.co.id/email-api)
+You need API token to authenticate the library with Aktiva Transaksional Email (ATE) API, which is available in the [Aktiva Transaksional Email Dashboard](https://apps.aktiva.co.id/email-api)
 
 ```typescript
 import { ATE } from '@aktiva/transaksional-email'
@@ -23,8 +23,8 @@ Send your first email:
 
 ```typescript
 await ate.emails.send({
-  from: 'richi.setya@aktiva.co.id',
-  to: 'r@richi.web.id',
+  from: 'developer@aktiva.co.id',
+  to: 'user@example.com',
   subject: 'Hello from Aktiva Transaksioanl Email SDK',
   text: 'Hi, this is a test email!'
 }) 
@@ -36,8 +36,8 @@ Send email using custom HTML content:
 
 ```typescript
 await ate.emails.send({
-  from: 'richi.setya@aktiva.co.id',
-  to: 'r@richi.web.id',
+  from: 'developer@aktiva.co.id',
+  to: 'user@example.com',
   subject: 'Hello from Aktiva Transaksioanl Email SDK',
   html: '<p>Hi, this is a test email!</p>'
 }) 
