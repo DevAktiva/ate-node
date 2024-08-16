@@ -4,11 +4,7 @@ export class ResponseError extends Error {
   public readonly code: number;
   public readonly detail: string | undefined;
 
-  constructor(
-    message: string,
-    code: number,
-    detail: string | undefined,
-  ) {
+  constructor(message: string, code: number, detail: string | undefined) {
     super();
     this.message = message;
     this.code = code;
@@ -25,11 +21,7 @@ export class ResponseSuccess {
   public readonly data: SuccessData | undefined;
   public readonly message: string;
 
-  constructor(
-    message: string,
-    code: number,
-    data: SuccessData | undefined,
-  ) {
+  constructor(message: string, code: number, data: SuccessData | undefined) {
     this.message = message;
     this.code = code;
     this.data = data;
