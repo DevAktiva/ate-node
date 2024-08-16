@@ -25,6 +25,11 @@ export class Emails {
       content = payload.text;
     }
 
+    if (!payload.attachments) payload.attachments = [];
+    for (const i in payload.attachments) {
+      payload.attachments[i].encoding = 'base64';
+    }
+
     const data = await this.ate.post<Response>(
       '/send',
       {

@@ -18,8 +18,10 @@ interface EmailBaseOptions {
 interface Attachment {
   content?: string | Buffer;
   filename?: string | undefined;
-  path?: string;
-  content_type?: string;
+  encoding?: 'base64';
+  // todo: support attachment for this type
+  // path?: string;
+  // content_type?: string;
 }
 
 export type EmailOptions = RequireAtLeastOne<RenderOptions> & EmailBaseOptions;
