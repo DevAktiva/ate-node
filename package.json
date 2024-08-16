@@ -1,7 +1,7 @@
 {
-  "name": "ate-sdk",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ate-node",
+  "version": "0.0.1",
+  "description": "Aktiva Transaksional Email SDK for Node JS",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
@@ -10,13 +10,27 @@
     "format": "biome format --write .",
     "lint": "biome check ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "RichiMaulana",
+  "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@types/node": "18.19.34",
     "ts-node": "10.9.2",
     "tsup": "7.2.0",
     "typescript": "5.4.5"
-  }
+  },
+  "types": "./dist/index.d.ts",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevAktiva/ate-node.git"
+  },
+  "keywords": [
+    "transactional email",
+    "ate"
+  ],
+  "bugs": {
+    "url": "https://github.com/DevAktiva/ate-node/issues"
+  },
+  "homepage": "https://github.com/DevAktiva/ate-node#readme"
 }
